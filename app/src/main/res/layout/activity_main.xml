@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"
+        android:importantForAccessibility="no" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:clipToPadding="false"
+        android:paddingHorizontal="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <RelativeLayout
+            android:id="@+id/rlNtk"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:clickable="true"
+            android:background="@drawable/button"
+            android:elevation="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_semibold"
+                android:gravity="center"
+                android:clickable="false"
+                android:includeFontPadding="false"
+                android:text="@string/btn_ntk"
+                android:textColor="#000"
+                android:textSize="24sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rlPhysicalTraining"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:clickable="true"
+            android:layout_marginTop="100dp"
+            android:paddingHorizontal="10dp"
+            android:background="@drawable/button"
+            android:elevation="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_semibold"
+                android:gravity="center"
+                android:clickable="false"
+                android:includeFontPadding="false"
+                android:text="@string/btn_physical_training"
+                android:textColor="#000"
+                android:textSize="24sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rlCheckYourself"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:clickable="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="100dp"
+            android:paddingHorizontal="10dp"
+            android:background="@drawable/button"
+            android:elevation="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_semibold"
+                android:gravity="center"
+                android:clickable="false"
+                android:includeFontPadding="false"
+                android:text="@string/btn_check_yourself"
+                android:textColor="#000"
+                android:textSize="24sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

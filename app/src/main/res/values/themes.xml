@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ConscriptsMemory" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:spotShadowAlpha">0.3</item>
+        <item name="android:statusBarColor">#76785f</item>
+    </style>
+
+    <style name="Theme.ConscriptsMemory" parent="Base.Theme.ConscriptsMemory" />
+</resources>
